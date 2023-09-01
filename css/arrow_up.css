@@ -1,0 +1,163 @@
+
+  #back-to-top-btn {
+    z-index: 999;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 20%);
+
+    
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    -webkit-animation-name: dance-dance-v;
+    animation-name: dance-dance-v;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+
+  #back-to-top-btn:hover {
+    /* border: 1px solid rgba(255, 255, 255, 0.7); */
+    background-color: black; 
+    color: white;
+  }
+  
+  @media(max-width: 992px) {
+    #back-to-top-btn { 
+      font-size: 16px; 
+      width: 40px; 
+      height: 40px; 
+      bottom: 15px; 
+      right: 15px; 
+    }
+  }
+
+  @media(max-width:768px) {
+    #back-to-top-btn { 
+      font-size: 13px; 
+      width: 35px; 
+      height: 35px; 
+      bottom: 6px; 
+      right: 6px; 
+    }
+  }
+ 
+  .btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+  }
+
+  @keyframes btnEntrance {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;  
+    animation-name: btnExit;
+  }
+
+  @keyframes btnExit {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+
+  @-webkit-keyframes dance-dance-v {
+    0% {
+      -webkit-transform:translateY(-20px);
+      transform:translateY(-20px)
+    }
+
+    50% {
+      -webkit-transform:translateY(-10px);
+      transform:translateY(-10px)
+    }
+    
+    100% {
+      -webkit-transform:translateY(-20px);
+      transform:translateY(-20px)
+    }
+  }
+      
+  @keyframes dance-dance-v {
+    0% {
+      -webkit-transform:translateY(-20px);
+      transform:translateY(-20px)
+    }
+
+    50% {
+      -webkit-transform:translateY(-10px);
+      transform:translateY(-10px)
+    }
+    
+    100% {
+      -webkit-transform:translateY(-20px);
+      transform:translateY(-20px)
+    }
+  }
+
+  @-webkit-keyframes dance-dance-h {
+    0% {
+      -webkit-transform:translateX(-20px);
+      transform:translateX(-20px)
+    }
+
+    50% {
+      -webkit-transform:translateX(-10px);
+      transform:translateX(-10px)
+    }
+    
+    100% {
+      -webkit-transform:translateX(-20px);
+      transform:translateX(-20px)
+    }
+  }
+      
+  @keyframes dance-dance-h {
+    0% {
+      -webkit-transform:translateX(-20px);
+      transform:translateX(-20px)
+    }
+
+    50% {
+      -webkit-transform:translateX(-10px);
+      transform:translateX(-10px)
+    }
+    
+    100% {
+      -webkit-transform:translateX(-20px);
+      transform:translateX(-20px)
+    }
+  }

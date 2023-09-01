@@ -1,0 +1,361 @@
+.jumbotron {
+    background-image: url("../images/Jumbotron\ -\ UI_UX.jpg");
+    background-position: 50% 0%!important;
+}
+
+.Topic_2 {
+    width: 100%;
+    padding: 3em;
+}
+
+.Topic_2 h2 {
+    text-align: center;
+}
+
+.Topic_2 .text {
+    width: 95%;
+    margin: auto;
+}
+
+.Topic_2 .big-text, .Topic_2 .small-text {
+    padding: 0 1em;
+}
+
+.Topic_2 .big-text p, .Topic_2 .small-text p {
+    margin: 20px 0;
+}
+
+/* .Topic_2 .big-text span {
+    padding: 1em 1.5em;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: .8em;
+    letter-spacing: 1px;
+    background-color: #cfe5ef9d;
+} */
+
+.Topic_2 .big-text p {
+    line-height: 2em;
+    font-size: 2em !important;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+}
+
+.Topic_2 .holder {
+    display: flex;
+    padding: 3em 0;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.Topic_2 .holder .img {
+    background-image: url("../images/Wordpress.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    -webkit-animation-name: dance-dance-h;
+    animation-name: dance-dance-h;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.Topic_3 {
+    width: 100%;
+    margin: auto;
+    padding: 0 3em 5em;
+}
+
+.Topic_3 h2 {
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.Topic_3 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.Topic_3 .holder {
+    padding: 1em;
+}
+
+.Topic_3 .holder div {
+    height: 100%;
+    padding: 2em 1em 1em;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.Topic_3 .holder div:hover {
+    cursor: pointer;
+    background-color: #54627B;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.Topic_3 .holder div:hover span i {
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
+.Topic_3 .holder div span i {
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.Topic_3 .holder div span {
+    display: block;
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: lighter !important;
+}
+
+.Topic_3 .holder div h4 {
+    font-size: 1.2em;
+    margin: .5em 0 0;
+    letter-spacing: 1px;
+}
+
+.Topic_3 .holder div p {
+    font-size: .9em;
+}
+
+.Topic_4 {
+    width: 100%;
+    padding: 3em 5em 4em;
+}
+
+.Topic_4 .heading p {
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Topic_4 .holder {
+    padding: 3em;
+    text-align: center;
+}
+
+.Topic_4 .img {
+    width: 350px;
+    height: 350px;
+    padding: 2em;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #D0E6F0;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    -webkit-animation-name: dance-dance-v;
+    animation-name: dance-dance-v;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.Topic_4 .img img {
+    width: 100%;
+}
+
+.Topic_4 h4 {
+    font-size: 1.5em;
+}
+
+.Topic_4 ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2.8em;
+}
+
+
+/* Custom, iPhone Retina */ 
+@media (min-width : 320px) and (max-width : 479px) {
+    .Topic_2 {
+        padding: 3em 1.5em;
+    }
+
+    .Topic_2 .text {
+        width: 100%;
+    }
+
+    .Topic_2 .holder {
+        width: 90%;
+        margin: auto;
+    }
+
+    .Topic_2 .holder .img {
+        height: 250px;
+    }
+
+    .Topic_2 .small-text {
+        padding: 0 1em;
+    }
+    
+    .Topic_3 .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .Topic_3 {
+        padding: 0 1em 3em;
+    }
+
+    .Topic_3 .holder {
+        padding: 1.5em;
+    }
+
+    .Topic_4 {
+        padding: 3em 2em;
+    }
+
+    .Topic_4 .holder {
+        padding: 2em 1em;
+    }
+
+    .Topic_4 .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Topic_4 .heading p {
+        width: 90%;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media (min-width : 480px) and (max-width : 599px) {
+    .Topic_2 .holder {
+        width: 90%;
+        margin: auto;
+    }
+
+    .Topic_2 .holder .img {
+        height: 300px;
+    }
+    
+    .Topic_3 .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .Topic_3 .holder {
+        padding: 2em;
+    }
+
+    .Topic_4 .img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .Topic_4 .heading p {
+        width: 90%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media (min-width : 600px) and (max-width : 767px) {
+    .Topic_2 .holder {
+        width: 90%;
+        margin: auto;
+    }
+
+    .Topic_2 .holder .img {
+        height: 300px;
+    }
+    
+    .Topic_3 .container {
+        width: 75%;
+        margin: auto;
+    }
+
+    .Topic_3 .holder {
+        padding: 2em;
+    }
+
+    .Topic_4 .img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .Topic_4 .heading p {
+        width: 70%;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 899px) {
+    .Topic_2 .holder {
+        width: 80%;
+        margin: auto;
+    }
+
+    .Topic_2 .holder .img {
+        height: 320px;
+    }
+
+    .Topic_4 .img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .Topic_4 .heading p {
+        width: 70%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width : 900px) and (max-width : 1023px) {
+    .Topic_2 .holder {
+        width: 80%;
+        margin: auto;
+    }
+
+    .Topic_2 .holder .img {
+        height: 350px;
+    }
+
+    .Topic_4 .img {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1024px) and (max-width : 1199px) {
+    .Topic_2 .holder {
+        width: 80%;
+        margin: auto;
+    }
+
+    .Topic_2 .holder .img {
+        height: 350px;
+    }
+}
+
+@media (min-width : 1200px) {
+    .Topic_2 .holder .dv {
+       display: block !important;
+    }
+
+    .Topic_2 .holder .mv {
+        display: none !important;
+     }
+}

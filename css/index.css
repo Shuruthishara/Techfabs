@@ -1,0 +1,592 @@
+.jumbotron {
+    background-image: url("../images/Jumbotron\ -\ Home.jpg");
+}
+
+.Topic_2 {
+    width: 100%;
+    height: auto;
+    padding: 40px 100px 40px;
+}
+
+.service-holder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-holder > div {
+    display: inline-block;
+    padding: 10px;
+}
+
+.service-holder div span {
+    display: block;
+    width: 100%;
+    margin: 1.3em 0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-holder div div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 20%;
+    background-color: #D0E6F0;
+    /* background-color: rgb(151, 150, 150); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    -webkit-box-shadow: inset -1px 2px 25px 1px rgba(117,117,117,0.1);
+    -moz-box-shadow: inset -1px 2px 25px 1px rgba(117,117,117,0.1);
+    box-shadow: inset -1px 2px 25px 1px rgba(117,117,117,0.1);
+}
+
+.service-holder a:hover div {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.service-holder div div img {
+    width: 80%;
+}
+
+.Topic_2 h2 {
+    margin-bottom: 3em !important;
+}
+
+.Topic_3 {
+    width: 100%;
+    height: auto;
+    padding: 40px 90px 100px;
+}
+
+.Topic_3 .content h1 {
+    font-size: 1.6em;
+    letter-spacing: 1px;
+}
+
+.Topic_3 .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.Topic_3 .content {
+    flex: 1;
+}
+
+.Topic_3 .image, .Topic_3 .text {
+    padding: 0 3em;
+}
+
+.Topic_3 .content .bg-img {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/Wordpress.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    -webkit-animation-name: dance-dance-h;
+    animation-name: dance-dance-h;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.Topic_3 p.last-para {
+    width: 80%;
+    margin: 2em auto 0;
+    text-align: center;
+}
+
+.Topic_4 {
+    width: 100%;
+    height: auto;
+    padding: 40px 50px 100px;
+}
+
+.Topic_4 .list {
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+}
+
+.Topic_4 .container {   
+    padding: 1em;
+    flex: 1;
+}
+
+.Topic_4 .container > div {
+    width: 190px;
+    height: 190px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #CFE5EF;
+    /* background-color: #4d4d4d; */
+    border: 1px solid #CFE5EF;
+    transition: 0.3s;
+    /* color: rgba(255, 255, 255, 0.9); */
+}
+
+.Topic_4 .container > div:hover i {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
+.Topic_4 .container > div:hover {
+    border: 1px solid #54627b38;
+    transition: 0.3s;
+}
+
+.Topic_4 i {
+    font-size: 30px;
+    margin-bottom: .5em;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.Topic_4 .container span {
+    margin-top: .5em;
+}
+
+/* Custom, iPhone Retina */ 
+@media (min-width : 320px) and (max-width : 479px) {
+    .Topic_2 {
+        padding: 30px 0px 0;
+    }
+
+    .service-holder {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .service-holder div div {
+        width: 125px;
+        height: 125px;
+    }
+
+    .service-holder div div img {
+        width: 75%;
+    }
+
+    .Topic_3 {
+        padding: 3em 2em;
+    } 
+
+    .Topic_3 .content {
+        flex-direction: column;
+    }
+
+    .Topic_3 .content div {
+        flex: none;
+    }
+
+    .Topic_3 .image, .Topic_3 .text {
+        padding: 0 1em;
+    }
+    
+    .Topic_3 .image {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .Topic_3 p.last-para {
+        width: 100%;
+        margin: 0 auto 10px;
+        text-align: left;
+        padding: 0 1em;
+    }
+
+    .Topic_2 span {
+        line-height: 23px;
+    }
+
+    .heading h2 {
+        margin: 15px 0;
+    }
+          
+    .Topic_4 {
+        padding: 0px 13px 40px;
+    }
+
+    .Topic_4 .list {
+        padding: 30px 0;
+        flex-wrap: wrap;
+    }
+    
+    .Topic_4 .container {
+        padding: 1em;
+        flex-basis: 50%;
+        margin-bottom: 2em;
+    }
+
+    .Topic_4 .container > div {   
+        width: 125px;
+        height: 125px;
+    }
+
+    .Topic_4 i {
+        font-size: 20px;
+        margin-bottom: 0.2em;
+    }
+
+    .Topic_4 .container span {
+        margin-top: 0.2em;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media (min-width : 480px) and (max-width : 599px) {
+    .Topic_2 {
+        padding: 30px 60px;
+    }
+
+    .service-holder {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .service-holder div div {
+        width: 150px;
+        height: 150px;
+    }
+
+    .service-holder div div img {
+        width: 75%;
+    }
+
+    .Topic_3 {
+        padding: 3em 4em;
+    } 
+
+    .Topic_3 .content {
+        flex-direction: column;
+    }
+
+    .Topic_3 .content div {
+        flex: none;
+    }
+
+    .Topic_3 .image, .Topic_3 .text {
+        padding: 0 1em;
+    }
+    
+    .Topic_3 .image {
+        height: 300px;
+        margin-bottom: 0px;
+    }
+
+    .Topic_3 p.last-para {
+        width: 100%;
+        margin: 0 auto 20px;
+        text-align: left;
+        padding: 0 1em;
+    }
+
+    .Topic_2 span {
+        line-height: 23px;
+    }
+
+    .heading h2 {
+        margin: 15px 0;
+    }
+  
+    .Topic_4 {
+        padding: 0px 50px 60px;
+    }
+
+    .Topic_4 .list {
+        padding: 30px 0;
+        flex-wrap: wrap;
+    }
+    
+    .Topic_4 .container {
+        padding: 1em;
+        flex-basis: 50%;
+        margin-bottom: 2em;
+    }
+
+    .Topic_4 .container > div {   
+        width: 151px;
+        height: 151px;
+    }
+
+    .Topic_4 i {
+        font-size: 23px;
+        margin-bottom: 0.3em;
+    }
+
+    .Topic_4 .container span {
+        margin-top: 0.3em;
+    }
+}
+
+/* Small Devices, Tablets */
+@media (min-width : 600px) and (max-width : 767px) {
+    .Topic_2 {
+        padding: 30px 60px;
+    }
+
+    .service-holder div div {
+        width: 110px;
+        height: 110px;
+    }
+
+    .service-holder div div img {
+        width: 75%;
+    }
+
+    .Topic_3 {
+        padding: 3em 5em;
+    } 
+
+    .Topic_3 .content {
+        flex-direction: column;
+    }
+
+    .Topic_3 .content div {
+        flex: none;
+    }
+
+    .Topic_3 .image, .Topic_3 .text {
+        padding: 0 1em;
+    }
+    
+    .Topic_3 .image {
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .Topic_3 p.last-para {
+        width: 100%;
+        margin: 0 auto 20px;
+        text-align: left;
+        padding: 0 1em;
+    }
+
+    .Topic_2 span {
+        line-height: 23px;
+    }
+
+    .heading h2 {
+        margin: 15px 0;
+    }
+   
+    .Topic_4 {
+        padding: 0px 100px 60px;
+    }
+
+    .Topic_4 .list {
+        padding: 30px 0;
+        flex-wrap: wrap;
+    }
+    
+    .Topic_4 .container {
+        padding: 1em;
+        flex-basis: 50%;
+        margin-bottom: 2em;
+    }
+
+    .Topic_4 .container > div {   
+        width: 151px;
+        height: 151px;
+    }
+
+    .Topic_4 i {
+        font-size: 23px;
+        margin-bottom: 0.3em;
+    }
+
+    .Topic_4 .container span {
+        margin-top: 0.3em;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 899px) {
+    .Topic_2 {
+        padding: 30px 60px;
+    }
+
+    .service-holder div div {
+        width: 140px;
+        height: 140px;
+    }
+
+    .service-holder div div img {
+        width: 75%;
+    }
+
+    .Topic_3 {
+        padding: 3em 1.5em 6em;
+    } 
+
+    .Topic_3 .image, .Topic_3 .text {
+        padding: 0 1em;
+    }
+
+    .Topic_2 span {
+        line-height: 27px;
+    }
+
+    .heading h2 {
+        margin: 15px 0;
+    }
+    
+    .Topic_4 {
+        padding: 0px 17px 100px;
+    }
+
+    .Topic_4 .list {
+        padding: 30px 0;
+    }
+    
+    .Topic_4 .container {
+        padding: 0.6em;
+    }
+
+    .Topic_4 .container > div {   
+        width: 131px;
+        height: 131px;
+    }
+
+    .Topic_4 i {
+        font-size: 20px;
+        margin-bottom: 0.2em;
+    }
+
+    .Topic_4 .container span {
+        margin-top: 0.2em;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media (min-width : 900px) and (max-width : 1023px) {
+    .Topic_2 {
+        padding: 30px 60px;
+    }
+
+    .service-holder div div {
+        width: 170px;
+        height: 170px;
+    }
+
+    .service-holder div div img {
+        width: 80%;
+    }
+
+    .Topic_3 {
+        padding: 3em 2em 6em;
+    }
+
+    .Topic_3 .image, .Topic_3 .text {
+        padding: 0 1.5em;
+    }
+
+    .Topic_2 span {
+        line-height: 30px;
+    }
+
+    .Topic_4 {
+        padding: 20px 17px 100px;
+    }
+    
+    .Topic_4 .container {
+        padding: 0.7em;
+    }
+
+    .Topic_4 .container > div {   
+        width: 147px;
+        height: 147px;
+    }
+
+    .Topic_4 i {
+        font-size: 22px;
+        margin-bottom: 0.2em;
+    }
+
+    .Topic_4 .container span {
+        margin-top: 0.2em;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1024px) and (max-width : 1199px) {
+    .Topic_2 {
+        padding: 30px 60px;
+    }
+
+    .service-holder div div {
+        width: 170px;
+        height: 170px;
+    }
+
+    .service-holder div div img {
+        width: 80%;
+    }
+
+    .Topic_3 {
+        padding: 3em 3em 6em;
+    }
+
+    .Topic_3 .image, .Topic_3 .text {
+        padding: 0 1.5em;
+    }
+
+    .Topic_2 span {
+        line-height: 33px;
+    }
+
+    .Topic_4 {
+        padding: 40px 20px 100px;
+    }
+    
+    .Topic_4 .container > div {   
+        width: 165px;
+        height: 165px;
+    }
+
+    .Topic_4 i {
+        font-size: 27px;
+        margin-bottom: 0.4em;
+    }
+
+    .Topic_4 .container span {
+        margin-top: 0.4em;
+    }
+}
+
+@media (min-width : 1200px) {
+    .Topic_2 span {
+        line-height: 35px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .Topic_4 {
+        padding: 40px 120px 100px;
+    }
+}

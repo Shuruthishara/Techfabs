@@ -1,0 +1,243 @@
+nav {
+    width: 100%;
+    margin: 0 !important;
+    font-size: 14px;
+    position: fixed;
+    z-index: 999;
+    background-color: rgb(84, 98, 123);
+    /* background-color: #161616; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    nav {
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+    }
+}
+  
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    nav {
+        background-color: rgba(194, 194, 194, 0.4);
+    }
+}
+
+/* nav img.logo {
+    height: calc(100% - 1em);
+    margin: 0.5em;
+} */
+
+nav h1.logo {
+    height: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0.7em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    list-style-type: none;
+    transition: 0.3s;
+}
+
+nav li a {
+    display: block;
+    padding: 1.3em 0;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+}
+
+/* nav li:hover > a  {
+    color: black;  
+    transition: 0.3s;
+}
+
+nav li:hover {
+    cursor: pointer;
+    background-color: #BBC0CA;
+    color: black;
+    transition: 0.3s;
+}
+
+nav .active {    
+    background-color: #BBC0CA;
+    color: black;
+} */
+
+nav li:hover > a, nav .active {
+    color: rgba(255, 255, 255, 1);
+    transition: 0.3s;
+}
+
+.nav li:hover {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav li ul#sub-menu {
+    display: none;
+    margin: 0 !important;
+    padding: 0;
+}
+
+nav li:hover ul#sub-menu {
+    display: block;
+    background-color: rgb(84, 98, 123) !important;
+}
+
+nav li ul#sub-menu li {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+nav #hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+
+nav .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #BBC0CA;
+}
+
+/* Custom, iPhone Retina */ 
+@media (min-width : 320px) and (max-width : 479px) {
+    nav {
+        font-size: 11px;
+    }
+        
+    nav li a {
+        padding: .9em 0;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media (min-width : 480px) and (max-width : 599px) {
+    nav {
+        font-size: 12px;
+    }
+    
+    nav li a {
+        padding: .9em 0;
+    }
+}
+
+/* Small Devices, Tablets */
+@media (min-width : 600px) and (max-width : 767px) {
+    nav {
+        font-size: 12px;
+    }
+
+    nav li a {
+        padding: 1em 0;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 899px) {
+    nav {
+        font-size: 13px;
+    }
+    
+    nav li a {
+        padding: .7em 0;
+    }
+
+    nav li {
+        width: 125px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width : 900px) and (max-width : 1023px) {
+    nav {
+        font-size: 13px;
+    }
+
+    nav li a {
+        padding: .7em 0;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1024px) and (max-width : 1199px) {
+    nav li a {
+        padding: .7em 0;
+    }
+}
+
+@media (min-width : 1200px) {
+ 
+}
+
+
+@media (max-width : 767px) {
+    nav > ul {
+        display: block;
+        position: fixed;
+        left: -100%;
+        width: 100%;
+        float: none;
+        margin-top: -12px;
+        background-color: rgb(84, 98, 123);
+        transition: 0.3s;
+    }
+
+    nav ul#sub-menu {
+        width: 100%;
+        display: none;
+    } 
+
+    #main-menu.active-ul {
+        left: 0;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav li ul#sub-menu li:nth-child(3) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    nav li:last-child {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    nav #hamburger {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #hamburger.active-hb .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger.active-hb .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #hamburger.active-hb .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

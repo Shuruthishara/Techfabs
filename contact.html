@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/Techfabs Logo Circled - Mobile view.png" type="image/png" sizes="20x12">
+        <button id="back-to-top-btn"><i class="fas fa-chevron-up"></i></button>
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/arrow_up.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <script src="https://kit.fontawesome.com/a74d0f3882.js" crossorigin="anonymous"></script>
+        <script src="js/arrow_up.js"></script>
+        <title>Contact | Techfabs</title>
+        <meta name="title" content="Techfabs">
+        <meta name="description" content="Techfabs is a startup which aims at simplified and reliable solutions for a better digitization with a way to change by building client experience from the base up.">
+    </head>
+
+    <body>
+        <main>
+            <!--Jumbotron-->
+            <div class="jumbotron">
+                <div class="overlay">
+                    <nav id="nav">
+                        <a href="index.html">
+                            <!-- <img src="images/Techfabs Logo Circled - Mobile view.png" alt="Techfabs Logo" class="logo"> -->
+                            <h1 class="logo">Techfabs</h1>
+                        </a>
+
+                        <ul id="main-menu">
+                            <li id="main-menu-li"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+
+                            <li onclick="serviceButton()">
+                                <a>Services <i class="fas fa-caret-down"></i></a>
+
+                                <ul id="sub-menu">
+                                    <li><a href="web.html">Website</a></li>
+                                    <li><a href="social_media.html">Social Media</a></li>
+                                    <li><a href="ui_ux.html">UI / UX</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="contact.html" class="active">Contact</a></li>
+                        </ul>
+
+                        <div id="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </nav> 
+                </div>
+
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/Techfabs/" target="_blank" rel="noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/techfabs/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:contact@techfabs.in" target="_blank" rel="noreferrer"><i class="far fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/company/techfabs-tf" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+
+             <!--Topic_1-->
+             <div class="Topic_1">
+                <div class="heading">
+                    <h1>Contact Us</h1>
+                    <p style="margin-bottom: 0;">We are all ears!</p>
+                </div>
+            </div>
+
+    
+            <div class="container">
+                <form class="form" method="POST" action="php/contact_form.php">
+                    <div class="half-width-l grid-lg-6 grid-md-6 grid-sm-12 grid-xs-12">
+                        <input name="First Name" id="First Name" type="text" class="form-control input-one" placeholder="First Name" required><br>
+                    </div>
+
+                    <div class="half-width-r grid-lg-6 grid-md-6 grid-sm-12 grid-xs-12">
+                        <input name="Last Name" id="Last Name" type="text" class="form-control input-one" placeholder="Last Name" required><br>
+                    </div>
+
+                    <div class="half-width-l grid-lg-6 grid-md-6 grid-sm-12 grid-xs-12">
+                        <input name="Email" id="Email" type="email" class="form-control input-two" placeholder="Email" required><br>
+                    </div>
+
+                    <div class="half-width-r grid-lg-6 grid-md-6 grid-sm-12 grid-xs-12">
+                        <input name="Phonenumber" id="Phonenumber" type="tel" class="form-control input-two" placeholder="Phone" required><br>
+                    </div>
+                    
+                    <input name="Subject" id="Subject" type="text" class="form-control input-three" placeholder="Subject" required><br>
+                    <textarea name="Message" id=" Message" class="form-control input-four" placeholder="Your Message" row="4" required></textarea><br>
+                    <input type="submit" class="form-control input-five submit" value="Submit">
+                </form>
+            </div>
+            
+
+            <!--Contact Details-->
+            <footer>
+                <div class="grid-1 grid-lg-3 grid-md-6 grid-sm-12 grid-xs-12">
+                    <h4>Techfabs</h4>
+
+                    <hr>
+
+                    <p>Aims at simplified and reliable solutions for a better digitization with a way to change by building client experience from the base up.</p>
+                </div>
+
+                <div class="grid-2 grid-lg-3 grid-md-6 grid-sm-12 grid-xs-12">
+                    <h4>Quick Links</h4>
+
+                    <hr>
+
+                    <ul>
+                        <li><a href="index.html">Home <i class="fas fa-caret-right"></i></a></li>
+                        <li><a href="about.html">About <i class="fas fa-caret-right"></i></a></li>
+                        <li><a href="contact.html" class="active">Contact <i class="fas fa-caret-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-3 grid-lg-3 grid-md-6 grid-sm-12 grid-xs-12">
+                    <h4>Services</h4>
+
+                    <hr>
+
+                    <ul>
+                        <li><a href="web.html">Website <i class="fas fa-caret-right"></i></a></li>
+                        <li><a href="social_media.html">Social Media <i class="fas fa-caret-right"></i></a></li>
+                        <li><a href="ui_ux.html">UI / UX Design <i class="fas fa-caret-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-4 grid-lg-3 grid-md-6 grid-sm-12 grid-xs-12">
+                    <h4>Newsletter</h4>
+
+                    <hr>
+                    
+                    <p>Scale your business with our creatively nurtured newsletter.</p>
+
+                    <input name="Email-ID" id="Email-ID" type="text" class="form-control" placeholder="EMAIL ID" required>
+                    <input type="submit" class="form-control subscribe" value="Subscribe">
+                </div>
+            </footer>
+        </main>
+        
+        <script src="js/common.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="js/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init({ 
+                duration: 1200,
+            });
+        </script>
+    </body>
+</html>
